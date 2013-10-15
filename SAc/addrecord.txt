@@ -1,0 +1,17 @@
+<?php
+$btn = $_REQUEST["b1"];
+$r = strcmp($btn,"Back");
+if($r==0){
+	header('Location: form.htm');return;
+	}
+	
+$name = $_REQUEST["name"];
+$pass = $_REQUEST["pass"];
+$email = $_REQUEST["email"];
+include("conn.php");
+mysql_query("insert into regtable values('$name','$pass','$email')");
+$q = mysql_affected_rows($con);
+if($q>0){
+	header('Location: regnanita.php?m=Record Inserted.');
+	}
+?>
