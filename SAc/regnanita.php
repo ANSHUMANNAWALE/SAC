@@ -12,7 +12,7 @@ document.getElementById("b1").disabled=true;
 }
 
 function count(){
-document.getElementById("s2").style.color="red";
+document.getElementById("s2").style.color="white";
 a=document.getElementById("pass").value.length;
 if(a<4){
 document.getElementById("s2").innerHTML="VERY WEAK";
@@ -31,7 +31,7 @@ function validate(){
 unm = document.getElementById("unm").value;
 if(unm==""){
 document.getElementById("s1").innerHTML =  "Username Is Required..";
-document.getElementById("s1").style.color="red";
+document.getElementById("s1").style.color="white";
 return false;
 }
 
@@ -39,14 +39,14 @@ pass = document.getElementById("pass").value;
 
 if(pass.length<6){
 document.getElementById("s2").innerHTML =  "Password Too Short..";
-document.getElementById("s2").style.color="red";
+document.getElementById("s2").style.color="white";
 return false;
 }
 
 rpass=document.getElementById("rpass").value;
 if(pass!=rpass){
 document.getElementById("s3").innerHTML =  "Password Not Matched..";
-document.getElementById("s3").style.color="red";
+document.getElementById("s3").style.color="white";
 return false;
 }
 
@@ -55,25 +55,25 @@ g2 = document.getElementById("g2").checked;
 
 if(g1==false && g2==false){
 document.getElementById("s4").innerHTML =  "PLZ..Select A Gender";
-document.getElementById("s4").style.color="red";
+document.getElementById("s4").style.color="white";
 return false;
 }
 contact = document.getElementById("contact").value;
 if(contact.length!=10){
 document.getElementById("s5").innerHTML =  "Invalid Contact No..";
-document.getElementById("s5").style.color="red";
+document.getElementById("s5").style.color="white";
 return false;
 }
 if(isNaN(contact)){
 document.getElementById("s5").innerHTML =  "Char Not Allowed..";
-document.getElementById("s5").style.color="red";
+document.getElementById("s5").style.color="white";
 return false;
 }
 
 ch = contact.charAt(0);
 if(!(ch==9 || ch==8 || ch==7)){
 document.getElementById("s5").innerHTML =  "Invalid Series..";
-document.getElementById("s5").style.color="red";
+document.getElementById("s5").style.color="white";
 return false;
 }
 
@@ -82,7 +82,7 @@ atpos = email.indexOf('@');
 dtpos = email.lastIndexOf('.');
 if(atpos==-1 || dtpos==-1){
 	document.getElementById("s6").innerHTML =  "Invalid EMAIL ID";
-document.getElementById("s6").style.color="red";
+document.getElementById("s6").style.color="white";
 return false;
 	}
 len = email.length;
@@ -90,14 +90,14 @@ diff = len - dtpos;
 	--diff;
 	if(diff>3 || diff<2){
 		document.getElementById("s6").innerHTML =  "Invalid EMAIL ID";
-document.getElementById("s6").style.color="red";
+document.getElementById("s6").style.color="white";
 return false;
 		}
 	diff2 = dtpos - atpos;
 	--diff2;
 	if(diff2<1){
 		document.getElementById("s6").innerHTML =  "Invalid DOMAIN";
-document.getElementById("s6").style.color="red";
+document.getElementById("s6").style.color="white";
 return false;
 		}	
 return true;
@@ -120,7 +120,7 @@ return true;
 <input type="text" id="email" name="email" size=50 style="height:40px">
 <span id="s6"></span><br>
 <p style="text-align:center;"><input type="checkbox" id="c1" size=50 onClick="chk()"></p><p style="font-size:25px;background-color:yellowgreen;color:white;text-align:center" >I AGree The Terms & Policies..(click above checkbox) </p><br>
-<p style="text-align:center;"><input disabled type="submit" value="REGISTER" id="b1" onClick="return validate()" style="font-size:45px;background-color:yellowgreen;color:white" value="sign-up" ></p>
+<p style="text-align:center;"><input disabled type="submit" name="submit" value="REGISTER" id="b1" onClick="return validate()" style="font-size:45px;background-color:yellowgreen;color:white" value="sign-up" ></p>
 </form>
 </body>
 </html>

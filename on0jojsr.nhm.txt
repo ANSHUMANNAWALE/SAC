@@ -1,0 +1,43 @@
+﻿ANSHUMAN NAWALE 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   SAc/addrecord.php
+#	modified:   SAc/conn.php
+#	new file:   SAc/date.js.txt
+#	new file:   SAc/date.php
+#	new file:   SAc/done.php
+#	new file:   SAc/form.htm
+#	modified:   SAc/form.php
+#	new file:   SAc/mainpage.htm
+#	modified:   SAc/mainpage.php
+#	new file:   SAc/no.htm
+#	new file:   SAc/no.php
+#	new file:   SAc/regnanita.htm
+#	modified:   SAc/regnanita.php
+#	new file:   SAc/validate.php
+#	new file:   SAc/validatehall.php
+#	new file:   SAc/yes.htm
+#	new file:   SAc/yes.php
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    README.md
+#	deleted:    SAc/README.md
+#	deleted:    SAc/addrecord.txt
+#	deleted:    SAc/available.php
+#	deleted:    SAc/create table.txt
+#	deleted:    SAc/form.html
+#	deleted:    SAc/mainpage.html
+#	deleted:    SAc/mainpage.txt.htm
+#	deleted:    SAc/no.html
+#	deleted:    SAc/regnanita.html
+#	deleted:    SAc/search.php
+#	deleted:    SAc/yes.html
+#
+
